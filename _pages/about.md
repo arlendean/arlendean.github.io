@@ -22,5 +22,4 @@ Hello and welcome to my site! I am a Ph.D. student in the Industrial and Operati
  My research focuses on improving patient care quality through addressing various hospital operations problems.  The major themes of my current work have been related to the management of care unit beds and reducing unplanned readmissions.
 
 
-
 I am interested in combining optimization and statistical/machine learning models to achieve more informed solutions to problems through personalization. In particular, I am drawn to the design and application of algorithms in the online or real-time setting, where we must learn to make the best decisions over time.
