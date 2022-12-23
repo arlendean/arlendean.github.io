@@ -10,16 +10,21 @@ profile:
   image_circular: false # crops the image to make it circular
   address: >
     <!-- <p>Email: arlend@umich.edu </p> -->
-
+    <p style="text-align:center"> Me enjoying a flight of beers.  </p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello and welcome to my site! I am a Ph.D. student in the Industrial and Operations Engineering department at the University of Michigan, advised by Professor Mark Van Oyen. Previously, I did my undergraduate at Arizona State University.
+Hello! I am a Ph.D. student in the Industrial and Operations Engineering department at the University of Michigan. As part of a joint degree program, I am also a Master's student in the Department of Statistics at the University of Michigan. I did my undergraduate studies at Arizona State University.
 
- My research focuses on improving patient care quality through addressing various hospital operations problems.  The major themes of my current work have been related to the management of care unit beds and reducing unplanned readmissions.
+I have the pleasure of being advised by Professor Mark P. Van Oyen. I am also forturante to have my Ph.D. supported by a graduate fellowship from the National Science Foundation.
+
+My research is at the intersection of optimization and machine learning. In particular, I am drawn to the design of algorithms for decision-making  in real-time operations. Many problems I have worked on have involved limited, reusable resources and are motivated by applications in healthcare and revenue management. My goal is to leverage theory and problem domain knowledge to build efficient solutions. As part of this, I seek to also study the interplay between algorithms and people.
 
 
-I am interested in combining optimization and statistical/machine learning models to achieve more informed solutions to problems through personalization. In particular, I am drawn to the design and application of algorithms in the online or real-time setting, where we must learn to make the best decisions over time.
+
+
+
+<!-- I have worked with several hospitals on projects concerning surgery scheduling, hospital admissions, and bed placements. I also collaborate with clinicians in the US and UK to improve disease management of glaucoma.    -->
