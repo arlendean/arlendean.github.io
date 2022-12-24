@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /publications/
+permalink: /Research/
 title: Research
 description:
 years:
@@ -30,5 +30,7 @@ nav_order: 1
       {% endfor %}
       </div>
   </article>
-
 </div>
+
+---
+## Publications

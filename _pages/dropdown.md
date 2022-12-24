@@ -2,38 +2,19 @@
 layout: page
 permalink: /Talks/
 title: Talks
-description:  Abstracts for talks I have given.
+years: [2021,2022,2023]
 nav: true
 nav_order: 2
 ---
+<div class="publications">
+{%- for y in page.years %}
+  <h2 class="year">{{y}}</h2>
+  {% bibliography -f papers -q @*[year={{y}}]* %}
+{% endfor %}
 
-<div class="news">
-  <h3>INFORMS Annual Conference</h3>
-  {% if site.Talks != blank -%}
-  {%- assign news_size = site.news | size -%}
-  <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
-    <table class="table table-sm table-borderless">
-    {%- assign news = site.news | reverse -%}
-    {% if site.news_limit %}
-    {% assign news_limit = site.news_limit %}
-    {% else %}
-    {% assign news_limit = news_size %}
-    {% endif %}
-    {% for item in news limit: news_limit %}
-      <tr>
-        <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-        <td>
-          {% if item.inline -%}
-            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-          {%- else -%}
-            <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-          {%- endif %}
-        </td>
-      </tr>
-    {%- endfor %}
-    </table>
-  </div>
-{%- else -%}
-  <p>No news so far...</p>
-{%- endif %}
 </div>
+
+<!--
+<div class="post">
+  {%- include talks.html %}
+</div> -->
