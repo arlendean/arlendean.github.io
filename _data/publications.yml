@@ -1,0 +1,33 @@
+
+- title: Publications
+  type: time_table
+  contents:
+    - title: Quantile Regression Forests for Individualized Surgery Scheduling
+      institution: Dean, A., Meisami, A., Lam, H., Van Oyen, M., Stromblad, C., Kastango, N
+      <! -- year: 2022 -->
+      description:
+        - Healthcare Management Science, 2022
+
+- title: Submitted Papers
+  type: time_table
+  contents:
+    - title: Dynamic Care Unit Placements under Unknown Demand with Learning
+      institution: Dean, A., Zhaelchian, M., Van Oyen, M.
+      description:
+        - major revision at Manufacturing & Service Operations Management
+
+
+- title: Working Papers
+  type: time_table
+  contents:
+    - title: Forecasting Visual-field Loss in Open-angle Glaucoma Patients by Application of Kalman-filtering to 20 Years of Real-World, Multicenter Data
+      institution: Zhaelchian, M., Fu, D.J., Dean, A., Van Oyen, M., Lavieri, M., Stein, J., Khawaja, A.
+      description:
+        - preparing for submission
+
+    - title: Real-time Matching of Patients to Beds for a Hospital System
+      institution: Dean, A., Zhaelchian, M., Van Oyen, M., Garifullin, M., Pardo, J.
+
+
+    - title: Online Learning and Pricing for Bundled Rentals
+      institution: Dean, A., Zhaelchian, M., Shi, C.
