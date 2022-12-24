@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   address: >
     <!-- <p>Email: arlend@umich.edu </p> -->
-    <p style="text-align:center"> Me enjoying a flight of beers.  </p>
+    <p style="text-align:center">   </p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
