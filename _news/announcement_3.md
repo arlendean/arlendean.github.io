@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-10-16 07:59:00-0400
 inline: true
 ---
 
-Just presented at INFORMS Annual Conference 2022 in Indianpolis. 
+Presenting at INFORMS Annual Conference 2022 in Indianapolis on my care unit admissions work.
