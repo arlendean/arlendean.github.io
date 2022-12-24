@@ -1,4 +1,5 @@
-- type: time_table
+- title: Working Papers
+  type: time_table
   contents:
     - title: Forecasting Visual-field Loss in Open-angle Glaucoma Patients by Application of Kalman-filtering to 20 Years of Real-World, Multicenter Data
       institution: Zhaelchian, M., Fu, D.J., Dean, A., Van Oyen, M.P., Lavieri, M., Stein, J., Khawaja, A.

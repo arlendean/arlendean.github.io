@@ -8,12 +8,14 @@ nav: true
 nav_order: 1
 years: [2022]
 ---
-### Publications
+
+
 <div class="post">
   <article>
     <div class="cvtwo">
       {% for entry in site.data.publications %}
         <div class="cardtwo mt-3 p-1">
+        <h3 class="card-title font-weight-bold">{{ entry.title }}</h3>
           <div>
           {% if entry.type == "list" %}
             {% include cv/list.html %}
@@ -35,12 +37,11 @@ years: [2022]
 
 ---
 
-### Submitted Papers
-
 <div class="post">
     <div class="cvtwo">
       {% for entry in site.data.submittedpapers %}
         <div class="cardtwo mt-3 p-1">
+          <h3 class="card-title font-weight-bold">{{ entry.title }}</h3>
           <div>
           {% if entry.type == "list" %}
             {% include cv/list.html %}
@@ -61,12 +62,12 @@ years: [2022]
 
 ---
 
-### Working Papers
-
 <div class="post">
-      <div class="cvtwo">
-        <div class="cardtwo mt-3 p-1">
+    <div class="cvtwo">
       {% for entry in site.data.workingpapers %}
+        <div class="cardtwo mt-3 p-1">
+          <h3 class="card-title font-weight-bold">{{ entry.title }}</h3>
+          <div>
           {% if entry.type == "list" %}
             {% include cv/list.html %}
           {% elsif entry.type == "map" %}
@@ -78,11 +79,8 @@ years: [2022]
           {% else %}
             {{ entry.contents }}
           {% endif %}
-
+          </div>
+        </div>
       {% endfor %}
-              </div>
-              </div>
+      </div>
 </div>
-
-
----

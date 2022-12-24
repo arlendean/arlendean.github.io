@@ -1,5 +1,6 @@
 
-- type: time_table
+- title: Publications 
+  type: time_table
   contents:
     - title: Quantile Regression Forests for Individualized Surgery Scheduling
       institution: Dean, A., Meisami, A., Lam, H., Van Oyen, M.P., Stromblad, C., Kastango, N
