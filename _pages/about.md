@@ -24,6 +24,7 @@ I have the pleasure of being advised by Professor [Mark P. Van Oyen][5]. I am al
 My research is at the intersection of [optimization and machine learning][7]. In particular, I am drawn to the design of algorithms for decision-making  in real-time operations. Many problems I have worked on have involved limited, reusable resources and are motivated by applications in [healthcare][7] and [revenue management][7]. My goal is to leverage theory and problem domain knowledge to provide efficient solutions in complex environments.
 
 
+
 [1]: <https://ioe.engin.umich.edu> "IOE"
 [2]: <https://umich.edu> "UM"
 [3]: <https://lsa.umich.edu/stats> "STATS"
