@@ -14,7 +14,7 @@ profile:
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
 Hello! I am a Ph.D. candidate in the [Industrial and Operations Engineering][1] department at the [University of Michigan][2]. As part of a joint degree program, I am also a M.A. student in the [Department of Statistics][3] at the University of Michigan. I did my undergraduate studies at [Arizona State University][4].
