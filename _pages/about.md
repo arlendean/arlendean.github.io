@@ -21,7 +21,7 @@ Hello! I am a Ph.D. student in the [Industrial and Operations Engineering][1] de
 
 I have the pleasure of being advised by Professor [Mark P. Van Oyen][5]. I am also fortunate to have my Ph.D. supported by a graduate research fellowship from the [National Science Foundation][6].
 
-My research is at the intersection of [optimization and machine learning][7]. In particular, I am drawn to the design of algorithms for decision-making  in real-time operations. Many problems I have worked on have involved limited, reusable resources and are motivated by applications in [healthcare][7] and [revenue management][7]. My goal is to leverage theory and problem domain knowledge to provide efficient solutions in complex environments.
+My research is at the intersection of [optimization and machine learning][7]. In particular, I am drawn to the design of algorithms for real-time operations and the study of how people engage with algorithmic tools in practice. The majority of my work is motivated by applications in [healthcare][7] and [revenue management][7].  Many of the problems I focus on have involved limited, reusable resources and hetergenous patient/customer types.  
 
 
 
