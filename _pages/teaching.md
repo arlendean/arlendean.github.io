@@ -4,10 +4,15 @@ permalink: /teaching/
 title: Teaching
 description:  Details about courses I have experience in teaching.
 nav: true
-nav_order: 5
+nav_order: 3
 ---
 
 > University of Michigan
+
+**IOE 316 -  Introduction to Markov Processes**
+
+* Introduction to discrete Markov Chains and continuous Markov processes, including transient and limiting behavior. Introduction to Markov Decision Processes. The Poisson/Exponential process. Applications to reliability, maintenance, inventory, production, queues and other engineering problems.
+
 
 **IOE 265 - Probability and Statistics for Engineers**
 

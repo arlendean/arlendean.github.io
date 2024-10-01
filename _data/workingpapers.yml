@@ -1,14 +1,13 @@
 - title: Working Papers
   type: time_table
   contents:
-    - title: Forecasting Visual-field Loss in Open-angle Glaucoma Patients by Application of Kalman-filtering to 20 Years of Real-World, Multicenter Data
-      institution: Zhalechian, M., Fu, D.J., Dean, A., Van Oyen, M.P., Lavieri, M., Stein, J., Khawaja, A.
+    - title: Patient-to-Bed  Placement Optimization&#58; Improving Coordination for a Hospital Command Center
+      institution:  with  J. Pardo, M. Garifullin, I.Attari, M. Zhalechian, M. P. Van Oyen
       description:
         - preparing for submission
 
-    - title: Optimizing Bed Assignments in Real-Time for a Hospital Command Center
-      institution: Dean, A., Zhalechian, M., Van Oyen, M.P., Garifullin, M., Pardo, J.
+    - title: Predicting Patient Next-day Discharge Using Machine Learning to Inform Hospital Capacity Management
+      institution: with   S.S. Ghasbeh, C. Qi, B. Liu, M. P. Van Oyen
+      description:
+        - preparing for submission
 
-
-    - title: Online Learning and Pricing for Bundled Rentals
-      institution: Dean, A., Zhalechian, M., Shi, C.

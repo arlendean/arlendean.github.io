@@ -13,38 +13,49 @@
   contents:
     - title: Ph.D. Operations Research
       institution: University of Michigan Ann Arbor
-      year:  2019-
+      year:  2024
       description:
-        - department of Industrial and Operations Engineering
-        - candidate with anticpated graduation in July, 2024
+        - Department of Industrial and Operations Engineering
+
     - title: M.A. Statistics
       institution: University of Michigan Ann Arbor
-      year: 2021-
+      year: 2024
       description:
-        - department of Statistics
-        - anticpated graduation in July, 2024
+        - Department of Statistics
+
     - title: B.S.E. Industrial Engineering
       institution: Arizona State University
       year: 2019
       description:
         - area of focus in operations research
-        - graduated with honors
+        - graduated with highest distinction
 
 - title: Academic Interests
   type: nested_list
   contents:
     - title: Methodology.
       items:
-        - machine learning, multi-armed bandits, online algorithms, optimization under uncertainty, queuing networks, causal inference
+        - machine learning, multi-arm bandits, online algorithms, optimization under uncertainty, queuing theory, causal inference
     - title: Application.
       items:
-        - service operations, healthcare delivery, medical decision making, revenue management
+        - service and healthcare operations,  revenue management, medical decision-making
 
 
 - title: Experience
   type: time_table
   contents:
-    - title: Course Instructor
+    - title: Postdoctoral Researcher
+      institution: Saïd Business School, University of Oxford
+      year: 2024
+
+
+    - title: Graduate Student Instructor
+      institution: University of Michigan
+      year: 2023-2024
+      description: IOE 316 -  Introduction to Markov Processes
+
+
+    - title: Course Instructor on Record
       institution: University of Michigan
       year: 2023
       description: IOE 265 - Probability and Statistics for Engineers
@@ -57,7 +68,7 @@
 
     - title: Graduate Student Research Assistant
       institution: University of Michigan
-      year: 2019-
+      year: 2019-2024
       description: Working on projects related to healthcare delivery and revenue managmeent.
 
     - title: Undergraduate Student Research Assistant
@@ -81,6 +92,11 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      items:
+      - Finalist, INFORMS Service Science Best Student Paper Competition 
+      - J. and L. Brown Outstanding Graduate Student Instructor
+
     - year: 2021-2022
       items:
         - Rackham Travel Grant
@@ -105,10 +121,16 @@
 - title: Service
   type: time_table
   contents:
-    - year: 2020-
+    - year: 2023-2024
       institution: Industrial and Operations Engineering Department
       items:
-        - graduate mentor
+        - Graduate Application Mentoring Program (GAMP)
+
+
+    - year: 2020-2024
+      institution: Industrial and Operations Engineering Department
+      items:
+        - first-year Ph.D. student mentor
 
 
     - year: 2020-2022
@@ -145,4 +167,4 @@
 - title: Other Interests
   type: list
   contents:
-    -  tennis, traveling, hiking, drawing, film and television 
+    -  tennis, running, rock climbing, film and television, traveling
