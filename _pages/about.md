@@ -9,7 +9,7 @@ profile:
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   address: >
-    <!-- <p>Email: arlend@umich.edu </p> -->
+    <!-- <p>Email: Arlen.Dean@sbs.ox.ac.uk </p> -->
     <p style="text-align:center">   </p>
 
 news: false  # includes a list of news items

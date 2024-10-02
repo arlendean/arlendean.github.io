@@ -6,7 +6,7 @@
     - name: Pronouns
       value: He/Him/His
     - name: Email
-      value: arlend@umich.edu
+      value: Arlen.Dean@sbs.ox.ac.uk
 
 - title: Education
   type: time_table
@@ -162,7 +162,12 @@
 - title: Skills
   type: list
   contents:
-    - Python, R, Matlab
+    - Python, R, Matlab, Java, VBA
+
+- title: Languages
+  type: list
+  contents:
+    - English (fluent), Mandarin Chinese (Conversational)
 
 - title: Other Interests
   type: list
