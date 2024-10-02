@@ -1,8 +1,0 @@
-
-- title: Publications 
-  type: time_table
-  contents:
-    - title: <a href="https://link.springer.com/article/10.1007/s10729-022-09609-0">Quantile Regression Forests for Individualized Surgery Scheduling</a>
-      institution:   with  A. Meisami, H. Lam, M. P. Van Oyen,  C. Stromblad, and  N.  Kastango 
-      description:
-        - Health Care Management Science, 2022
