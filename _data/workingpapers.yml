@@ -1,13 +1,23 @@
 - title: Working Papers
   type: time_table
   contents:
-    - title: Patient-to-Bed  Placement Optimization&#58; Improving Coordination for a Hospital Command Center
-      institution:  with  J. Pardo, M. Garifullin, I.Attari, M. Zhalechian, M. P. Van Oyen
+    - title: Real-World Validation of Two Previously Developed Kalman Filter Models for Visual Field Trajectory Forecasting in Glaucoma
+      institution: with D.J. Fu, V. Low, M. P. Van Oyen, J. Stein, A. Khawaja, M. Lavieri
       description:
         - preparing for submission
 
-    - title: Predicting Patient Next-day Discharge Using Machine Learning to Inform Hospital Capacity Management
-      institution: with   S.S. Ghasbeh, C. Qi, B. Liu, M. P. Van Oyen
+    - title: "Hospital Admission and Patient Transfer Control: An Offline Doubly-Robust Learning Approach"
+      institution: with S.S. Ghasbeh, E. Keyvanshokooh, M. P. Van Oyen
+      description:
+        - <i>Finalist, INFORMS Health Applications Society Student Paper Competition 2026</i>
+        - preparing for submission
+
+    - title: Learning to Plan Adaptive Human-AI Interactions
+      institution: with A. Orfanoudaki, M. Zhalechian
       description:
         - preparing for submission
 
+    - title: "Care at Home: Incentives, Congestion, and Patient Welfare"
+      institution: with Y. Li, L. Dong, and F. Zhang
+      description:
+        - preparing for submission

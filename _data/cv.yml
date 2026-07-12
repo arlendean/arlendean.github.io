@@ -6,19 +6,19 @@
     - name: Pronouns
       value: He/Him/His
     - name: Email
-      value: Arlen.Dean@sbs.ox.ac.uk
+      value: arlen@wustl.edu
 
 - title: Education
   type: time_table
   contents:
     - title: Ph.D. Operations Research
-      institution: University of Michigan Ann Arbor
+      institution: University of Michigan, Ann Arbor
       year:  2024
       description:
         - Department of Industrial and Operations Engineering
 
     - title: M.A. Statistics
-      institution: University of Michigan Ann Arbor
+      institution: University of Michigan, Ann Arbor
       year: 2024
       description:
         - Department of Statistics
@@ -30,23 +30,28 @@
         - area of focus in operations research
         - graduated with highest distinction
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
+    - title: Technology and Operations.
+      items:
+        - human-AI collaboration, service and healthcare operations, revenue management, medical decision-making
     - title: Methodology.
       items:
-        - machine learning, multi-arm bandits, online algorithms, optimization under uncertainty, queuing theory, causal inference
-    - title: Application.
-      items:
-        - service and healthcare operations,  revenue management, medical decision-making
+        - machine learning, sequential decision-making, online algorithms, optimization under uncertainty, queueing theory, econometrics
 
 
 - title: Experience
   type: time_table
   contents:
+    - title: Assistant Professor
+      institution: Olin Business School, Washington University in St. Louis
+      year: 2025
+      description: Supply Chain, Operations, and Technology
+
     - title: Postdoctoral Researcher
       institution: Saïd Business School, University of Oxford
-      year: 2024
+      year: 2024-2025
 
 
     - title: Graduate Student Instructor
@@ -69,12 +74,12 @@
     - title: Graduate Student Research Assistant
       institution: University of Michigan
       year: 2019-2024
-      description: Working on projects related to healthcare delivery and revenue managmeent.
+      description: Worked on projects related to healthcare delivery and revenue management.
 
     - title: Undergraduate Student Research Assistant
       institution: Arizona State University
       year: 2017-2019
-      description: Worked on projects relating to power-systems, argriculture, and waste management.
+      description: Worked on projects relating to power systems, agriculture, and waste management.
 
     - title: Industrial Engineer Intern
       institution: W.L. Gore
@@ -85,7 +90,7 @@
       institution: Project C.U.R.E.
       year: 2016
 
-    - title: Cooperative Eduction Experience
+    - title: Cooperative Education Experience
       institution: Collins Aerospace
       year: 2015
 

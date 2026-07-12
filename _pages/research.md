@@ -3,84 +3,33 @@ layout: page
 permalink: /Research/
 title: Research
 description:
-years:
 nav: true
 nav_order: 1
-years: [2022]
 ---
 
+{% assign paper_groups = site.data.publications | concat: site.data.submittedpapers | concat: site.data.workingpapers %}
 
-<div class="post">
-  <article>
-    <div class="cvtwo">
-      {% for entry in site.data.publications %}
-        <div class="cardtwo mt-3 p-1">
-        <h3 class="card-title font-weight-bold">{{ entry.title }}</h3>
-          <div>
-          {% if entry.type == "list" %}
-            {% include cv/list.html %}
-          {% elsif entry.type == "map" %}
-            {% include cv/map.html %}
-          {% elsif entry.type == "nested_list" %}
-            {% include cv/nested_list.html %}
-          {% elsif entry.type == "time_table" %}
-           {% include cv/time_table.html %}
-          {% else %}
-            {{ entry.contents }}
-          {% endif %}
-          </div>
-        </div>
+<div class="papers">
+{% for entry in paper_groups %}
+  <section class="paper-section">
+    <h2 class="section-heading">{{ entry.title }}</h2>
+    <ul class="paper-list">
+      {% for paper in entry.contents %}
+      <li class="paper">
+        <h3 class="paper-title">{{ paper.title }}</h3>
+        {% if paper.institution %}
+        <p class="paper-authors">{{ paper.institution }}</p>
+        {% endif %}
+        {% if paper.description %}
+        <ul class="paper-notes">
+          {% for note in paper.description %}
+          <li>{{ note }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
       {% endfor %}
-      </div>
-  </article>
-</div>
-
----
-
-<div class="post">
-    <div class="cvtwo">
-      {% for entry in site.data.submittedpapers %}
-        <div class="cardtwo mt-3 p-1">
-          <h3 class="card-title font-weight-bold">{{ entry.title }}</h3>
-          <div>
-          {% if entry.type == "list" %}
-            {% include cv/list.html %}
-          {% elsif entry.type == "map" %}
-            {% include cv/map.html %}
-          {% elsif entry.type == "nested_list" %}
-            {% include cv/nested_list.html %}
-          {% elsif entry.type == "time_table" %}
-           {% include cv/time_table.html %}
-          {% else %}
-            {{ entry.contents }}
-          {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-      </div>
-</div>
-
----
-
-<div class="post">
-    <div class="cvtwo">
-      {% for entry in site.data.workingpapers %}
-        <div class="cardtwo mt-3 p-1">
-          <h3 class="card-title font-weight-bold">{{ entry.title }}</h3>
-          <div>
-          {% if entry.type == "list" %}
-            {% include cv/list.html %}
-          {% elsif entry.type == "map" %}
-            {% include cv/map.html %}
-          {% elsif entry.type == "nested_list" %}
-            {% include cv/nested_list.html %}
-          {% elsif entry.type == "time_table" %}
-           {% include cv/time_table.html %}
-          {% else %}
-            {{ entry.contents }}
-          {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-      </div>
+    </ul>
+  </section>
+{% endfor %}
 </div>

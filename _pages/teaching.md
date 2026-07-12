@@ -2,28 +2,43 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description:  Details about courses I have experience in teaching.
+description: Courses I have taught.
 nav: true
 nav_order: 3
 ---
 
-> University of Michigan
+## Washington University in St. Louis
+{: .section-heading}
 
-**IOE 316 -  Introduction to Markov Processes**
+<div class="course" markdown="1">
+#### Operations Management
+</div>
 
-* Introduction to discrete Markov Chains and continuous Markov processes, including transient and limiting behavior. Introduction to Markov Decision Processes. The Poisson/Exponential process. Applications to reliability, maintenance, inventory, production, queues and other engineering problems.
+## University of Oxford
+{: .section-heading}
 
+<div class="course" markdown="1">
+#### Machine Learning for Business (MBA)
+</div>
 
-**IOE 265 - Probability and Statistics for Engineers**
+## University of Michigan
+{: .section-heading}
 
-* Graphical Representation of Data; Axioms of Probability; Conditioning, Bayes Theorem; Discrete Distributions (Geometric, Binomial, Poisson); Continuous Distributions (Normal Exponential, Weibull); Covariance and Correlation; Point and Interval Estimation, Likelihood Functions, Test of Hypotheses for Means, Variances and Proportions for One and Two Populations.
+<div class="course" markdown="1">
+#### IOE 316 — Introduction to Markov Processes
+</div>
 
-**IOE 545 - Stochastic Networks and Operations**
+<div class="course" markdown="1">
+#### IOE 265 — Probability and Statistics for Engineers
+</div>
 
-* Introduction to queueing networks and their use in modeling and analysis of operational systems. Methodological topics include regenerative processes, Markov processes, embedding, reversibility, quasi-reversibility, approximations for open and closed networks, intro to control of Markov queueing systems. Application of these stochastic models and the “physics” of flow operations with emphasis on services, healthcare, and production.
+<div class="course" markdown="1">
+#### IOE 545 — Stochastic Networks and Operations
+</div>
 
-> Arizona State University
+## Arizona State University
+{: .section-heading}
 
-**IEE 376 - Operations Research Deterministic Techniques/Applications**
-
-* Introductory course on deterministic mathematical models and developing solution methods for real–life optimal decision problems. The theoretical foundation will emphasis the simplex algorithm, theorems of duality, sensitivity analysis, network flows, and basic integer programming. Applications in a variety of domains, including transportation, health care, finance, and manufacturing.
+<div class="course" markdown="1">
+#### IEE 376 — Operations Research Deterministic Techniques and Applications
+</div>

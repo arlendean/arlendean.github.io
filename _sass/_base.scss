@@ -4,6 +4,20 @@
 
 // Typography
 
+body {
+  font-family: $font-family-sans;
+  font-size: 1rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
@@ -23,12 +37,22 @@ table {
 
 a, table.table a {
   color: var(--global-theme-color);
+  text-decoration: none;
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
+    text-underline-offset: 3px;
   }
-  &:hover:after :not(.nav-item.dropdown) {
-    width: 100%;
+}
+
+// Links inside running text get a quiet underline for affordance.
+article p a, article li a:not(.btn) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--global-divider-color);
+  &:hover {
+    text-decoration-color: var(--global-hover-color);
   }
 }
 
@@ -38,10 +62,10 @@ figure, img {
 
 blockquote {
   background: var(--global-bg-color);
-  border-left: 2px solid var(--global-theme-color);
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  font-size: 1.2rem;
+  border-left: 3px solid var(--global-theme-color);
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-size: 1.05rem;
 }
 
 // Math
@@ -72,42 +96,7 @@ blockquote {
   .card-title {
     color: var(--global-text-color);
   }
-
-  .card-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
-  }
 }
-
-// Cardtwo
-
-.cardtwo {
-  background-color: var(--global-bg-color);
-
-  img {
-    width: 100%;
-  }
-
-  .cardtwo-title {
-    color: var(--global-text-color);
-  }
-
-  .cardtwo-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
-  }
-}
-
 
 // Citation
 
@@ -120,35 +109,55 @@ blockquote {
 .profile {
   width: 100%;
 
+  img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+
   .address {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--global-text-color-light);
     p {
       display: inline-block;
       margin: 0;
     }
   }
 }
-.profile.float-right{
-  margin-left: 1rem;
+.profile.float-right {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
 }
-.profile.float-left{
-  margin-right: 1rem;
+.profile.float-left {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 32%;
     .address {
       p { display: block; }
     }
   }
 }
 
+// Page headers
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-title {
+  font-size: 2.35rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
 .post-description {
-  margin-bottom: 2rem;
-  font-size: 0.875rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: var(--global-text-color-light);
   a {
     color: inherit;
     &:hover {
@@ -158,34 +167,12 @@ blockquote {
   }
 }
 
-
 // Navbar customization
 
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
-}
-.navbar .dropdown-menu {
-  background-color: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
-  a:not(.active) {
-    color: var(--global-text-color);
-  }
-  a:hover {
-    color: var(--global-hover-color);
-  }
-  .dropdown-divider {
-    border-top: 1px solid var(--global-divider-color) !important;
-  }
-}
-.dropdown-item {
-  color: var(--global-text-color);
-    &:hover {
-      color: var(--global-hover-color);
-      background-color: var(--global-bg-color);
-    }
 }
 .navbar.navbar-light {
   a {
@@ -195,20 +182,27 @@ blockquote {
   }
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: $font-family-serif;
+    font-size: 1.2rem;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em;
   }
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+  .navbar-nav .nav-item.active > .nav-link {
+    background-color: inherit;
+    font-weight: 600;
+    color: var(--global-theme-color);
     &:hover {
       color: var(--global-hover-color);
     }
-  }
-  .navbar-nav .nav-item.active>.nav-link {
-      background-color: inherit;
-      font-weight: bolder;
-      color: var(--global-theme-color);
-      &:hover {
-        color: var(--global-hover-color);
-      }
   }
   .navbar-brand.social {
     padding-bottom: 0;
@@ -267,21 +261,24 @@ blockquote {
   padding: 0;
   border: 0;
   background-color: inherit;
-  color: var(--global-text-color);
+  color: var(--global-text-color-light);
   &:hover {
     color: var(--global-hover-color);
   }
 }
 
-// Social (bottom)
+// Social (bottom of the about page)
 
 .social {
   text-align: center;
+  margin-top: 2.5rem;
+
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.9rem;
     a {
+      padding: 0 0.4rem;
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-text-color-light);
         transition-property: all 0.2s ease-in-out;
       }
       &:hover {
@@ -291,16 +288,20 @@ blockquote {
       }
     }
   }
+
   .contact-note {
-    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
   }
 }
 
-
 // Footer
+
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.8rem;
   .container {
     color: var(--global-footer-text-color);
     padding-top: 9px;
@@ -309,7 +310,7 @@ footer.fixed-bottom {
   a {
     color: var(--global-footer-link-color);
     &:hover {
-      color: var(--global-theme-color);
+      color: var(--global-hover-color);
       text-decoration: none;
     }
   }
@@ -317,9 +318,94 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  a {
+    color: var(--global-footer-link-color);
+  }
+}
+
+// Section headings (Research, Teaching)
+
+.section-heading {
+  font-family: $font-family-sans;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+// Paper lists (Research page)
+
+.paper-section {
+  margin-bottom: 3rem;
+
+  .paper-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .paper {
+    margin-bottom: 1.9rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .paper-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.45;
+    margin-bottom: 0.25rem;
+    a {
+      color: var(--global-text-color);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      text-decoration-color: var(--global-divider-color);
+      &:hover {
+        color: var(--global-theme-color);
+        text-decoration-color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .paper-authors {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.25rem;
+  }
+
+  .paper-notes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    li, li span {
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+// Teaching page course entries
+
+.course {
+  margin-bottom: 1.5rem;
+
+  h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
 }
 
 // CV
@@ -330,185 +416,30 @@ footer.sticky-bottom {
   .card {
     background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
+    border-radius: 0.5rem;
+    box-shadow: none !important;
+
+    .card-title {
+      font-size: 1.35rem;
+      margin-bottom: 0.25rem;
+    }
 
     .list-group-item {
       background-color: inherit;
       border-color: var(--global-divider-color);
 
       .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
+        color: var(--global-theme-color) !important;
+        background-color: var(--global-accent-soft-color) !important;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        border-radius: 0.25rem;
       }
     }
   }
 }
 
-
-// CV
-
-.cvtwo {
-  margin-bottom: 40px;
-
-  .cardtwo {
-    background-color: var(--global-bg-color);
-
-    .list-group-item {
-      background-color: inherit;
-      border-color: var(--global-divider-color);
-
-      .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
-      }
-    }
-  }
-}
-
-
-// Repositories
-
-@media (min-width: 768px) {
-  .repo {
-    max-width: 50%;
-  }
-}
-
-// Blog
-
-.header-bar {
-  border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  h1 {
-    color: var(--global-theme-color);
-    font-size: 5rem;
-  }
-}
-
-.tag-list {
-  border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
-  padding-top: 1rem;
-
-  ul {
-    justify-content: center;
-    display: flow-root;
-
-    p, li {
-      list-style: none;
-      display: inline-block;
-      padding: 1rem 0.5rem;
-      color: var(--global-text-color-light);
-    }
-  }
-}
-
-.post-list {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  li {
-    border-bottom: 1px solid var(--global-divider-color);
-    list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    .post-meta {
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      margin-bottom: 0;
-    }
-    .post-tags {
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0;
-    }
-    a {
-      color: var(--global-text-color);
-      text-decoration: none;
-      &:hover {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-}
-
-.pagination {
-  .page-item {
-    .page-link {
-      color: var(--global-text-color);
-      &:hover {
-        color: $black-color;
-      }
-    }
-    &.active .page-link {
-      color: $white-color;
-      background-color: var(--global-theme-color);
-      &:hover {
-        background-color: var(--global-theme-color);
-      }
-    }
-  }
-}
-
-
-// Distill
-
-.distill {
-  a:hover {
-    border-bottom-color: var(--global-theme-color);
-    text-decoration: none;
-  }
-}
-
-
-// Projects
-
-.projects {
-  a {
-    text-decoration: none;
-
-    &:hover {
-      .card-title {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-
-  .card {
-    img {
-      width: 100%;
-    }
-  }
-
-  .card-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .grid-sizer, .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
-  }
-
-  h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: right;
-  }
-}
-
-
-// Publications
+// Publications (Talks page and selected papers)
 
 .publications {
   margin-top: 2rem;
@@ -526,12 +457,16 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
+    font-family: $font-family-sans;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
-    margin-bottom: -2rem;
-    text-align: right;
+    margin-bottom: 1rem;
+    text-align: left;
   }
   ol.bibliography {
     list-style: none;
@@ -540,11 +475,6 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
-      .preview {
-        width: 100%;
-        min-width: 80px;
-        max-width: 200px;
-      }
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -566,14 +496,14 @@ footer.sticky-bottom {
         }
       }
       .title {
-        font-weight: bolder;
+        font-weight: 600;
       }
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
+            border-bottom-style: solid;
+            text-decoration: none;
           }
         }
         > em {
@@ -585,8 +515,8 @@ footer.sticky-bottom {
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
           &:hover {
-              color: var(--global-text-color);
-              border-bottom: 1px dashed var(--global-text-color);
+            color: var(--global-text-color);
+            border-bottom: 1px dashed var(--global-text-color);
           }
         }
       }
@@ -609,10 +539,6 @@ footer.sticky-bottom {
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
         transition: all 0.15s ease;
 
         p {
@@ -627,10 +553,6 @@ footer.sticky-bottom {
       }
       .hidden.open {
         max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
         transition: all 0.15s ease;
       }
       div.abstract.hidden {
@@ -644,6 +566,7 @@ footer.sticky-bottom {
 }
 
 // Rouge Color Customization
+
 figure.highlight {
   margin: 0 0 1rem;
 }
@@ -667,8 +590,8 @@ code {
   padding: 3px 3px;
 }
 
-
 // Transitioning Themes
+
 html.transition,
 html.transition *,
 html.transition *:before,
@@ -677,85 +600,18 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-// Extra Markdown style (post Customization)
-.post{
-  .post-meta{
+// News & posts
+
+.post {
+  .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
     margin-bottom: 0;
   }
-  .post-tags{
-    color: var(--global-text-color-light);
-    font-size: 0.875rem;
-    padding-top: 0.25rem;
-    padding-bottom: 1rem;
-    a {
-      color: var(--global-text-color-light);
-      text-decoration: none;
-      &:hover {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-  .post-content{
+  .post-content {
     blockquote {
-      border-left: 5px solid var(--global-theme-color);
+      border-left: 3px solid var(--global-theme-color);
       padding: 8px;
     }
   }
 }
-
-progress {
-     /* Positioning */
-     position: fixed;
-     left: 0;
-     top: 56px;
-     z-index: 10;
-
-     /* Dimensions */
-     width: 100%;
-     height: 1px;
-
-     /* Reset the appearance */
-     -webkit-appearance: none;
-        -moz-appearance: none;
-             appearance: none;
-
-     /* Get rid of the default border in Firefox/Opera. */
-     border: none;
-
-     /* Progress bar container for Firefox/IE10  */
-     background-color: transparent;
-
-     /* Progress bar value for IE10  */
-     color: var(--global-theme-color);
- }
-
- progress::-webkit-progress-bar {
-     background-color: transparent;
- }
-
- progress::-webkit-progress-value {
-     background-color: var(--global-theme-color);
- }
-
- progress::-moz-progress-bar {
-     background-color: var(--global-theme-color);
- }
-
- .progress-container {
-     width: 100%;
-     background-color: transparent;
-     position: fixed;
-     top: 56px;
-     left: 0;
-     height: 5px;
-     display: block;
- }
-
- .progress-bar {
-     background-color: var(--global-theme-color);
-     width: 0%;
-     display: block;
-     height: inherit;
- }

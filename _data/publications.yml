@@ -1,8 +1,17 @@
-
-- title: Publications 
+- title: Publications
   type: time_table
   contents:
     - title: <a href="https://link.springer.com/article/10.1007/s10729-022-09609-0">Quantile Regression Forests for Individualized Surgery Scheduling</a>
-      institution:   with  A. Meisami, H. Lam, M. P. Van Oyen,  C. Stromblad, and  N.  Kastango 
+      institution: with A. Meisami, H. Lam, M. P. Van Oyen, C. Stromblad, and N. Kastango
       description:
         - Health Care Management Science, 2022
+
+    - title: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4120841">Dynamic Care Unit Placements under Unknown Demand with Learning</a>
+      institution: with M. Zhalechian, M. P. Van Oyen
+      description:
+        - Manufacturing & Service Operations Management
+
+    - title: "Validation of a Visual Field Prediction Tool for Glaucoma: A Multicenter Study Involving Patients with Glaucoma in the United Kingdom"
+      institution: with D.J. Fu, M. Zhalechian, M. P. Van Oyen, J. Stein, A. Khawaja, M. Lavieri
+      description:
+        - American Journal of Ophthalmology

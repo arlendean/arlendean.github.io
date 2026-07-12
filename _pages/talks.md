@@ -11,10 +11,4 @@ nav_order: 2
   <h2 class="year">{{y}}</h2>
   {% bibliography -f talks -q @*[year={{y}}]* %}
 {% endfor %}
-
 </div>
-
-<!--
-<div class="post">
-  {%- include talks.html %}
-</div> -->
