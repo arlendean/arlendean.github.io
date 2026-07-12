@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www-personal.umich.edu/~arlend//sitemap.xml
+Sitemap: https://arlendean.com/sitemap.xml
