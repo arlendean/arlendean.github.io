@@ -1,17 +1,17 @@
 - title: Publications
   type: time_table
   contents:
+    - title: <a href="https://pubsonline.informs.org/doi/10.1287/msom.2022.0260">Dynamic Care Unit Placements under Unknown Demand with Learning</a>
+      institution: with M. Zhalechian and M. P. Van Oyen
+      description:
+        - Manufacturing & Service Operations Management, 2025
+
+    - title: '<a href="https://www.sciencedirect.com/science/article/pii/S0002939425000212">Validation of a Visual Field Prediction Tool for Glaucoma: A Multicenter Study Involving Patients with Glaucoma in the United Kingdom</a>'
+      institution: with D.J. Fu, M. Zhalechian, M. P. Van Oyen, M. Lavieri, A. Khawaja, and J. Stein
+      description:
+        - American Journal of Ophthalmology, 2025
+
     - title: <a href="https://link.springer.com/article/10.1007/s10729-022-09609-0">Quantile Regression Forests for Individualized Surgery Scheduling</a>
       institution: with A. Meisami, H. Lam, M. P. Van Oyen, C. Stromblad, and N. Kastango
       description:
         - Health Care Management Science, 2022
-
-    - title: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4120841">Dynamic Care Unit Placements under Unknown Demand with Learning</a>
-      institution: with M. Zhalechian, M. P. Van Oyen
-      description:
-        - Manufacturing & Service Operations Management
-
-    - title: "Validation of a Visual Field Prediction Tool for Glaucoma: A Multicenter Study Involving Patients with Glaucoma in the United Kingdom"
-      institution: with D.J. Fu, M. Zhalechian, M. P. Van Oyen, J. Stein, A. Khawaja, M. Lavieri
-      description:
-        - American Journal of Ophthalmology
